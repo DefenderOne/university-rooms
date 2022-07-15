@@ -1,4 +1,4 @@
-namespace UniversityRooms.Application
+namespace UniversityRooms.UI
 {
     internal static class Program
     {
