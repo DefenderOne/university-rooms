@@ -9,11 +9,10 @@ public class DataContext : DbContext
     public DbSet<Room> Rooms { get; set; } = null!;
     public DbSet<Faculty> Faculties { get; set; } = null!;
     public DbSet<Cathedra> Cathedras { get; set; } = null!;
-    public DbSet<RoomType> RoomTypes { get; set; } = null!;
 
     public DataContext()
     {
-        
+        Database.EnsureCreated();
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

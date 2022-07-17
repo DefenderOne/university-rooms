@@ -9,6 +9,6 @@ public class RoomTypeConfiguration : IEntityTypeConfiguration<RoomType>
     public void Configure(EntityTypeBuilder<RoomType> builder)
     {
         builder.HasKey(rt => rt.Id);
-        builder.HasMany(rt => rt.Rooms).WithOne(r => r.Type);
+        //builder.HasMany(rt => rt.Rooms).WithOne(r => r.Type);
     }
 }

@@ -13,7 +13,6 @@ public class BuildingConfiguration : IEntityTypeConfiguration<Building>
         builder.Property(b => b.LevelsCount).IsRequired();
         builder.Property(b => b.Address).IsRequired();
         builder.HasMany(b => b.Faculties).WithOne(f => f.Building);
-        builder.HasMany(b => b.Cathedras).WithOne(c => c.Building);
         builder.HasMany(b => b.Rooms).WithOne(r => r.Building);
     }
 }
